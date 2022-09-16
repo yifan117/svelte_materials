@@ -1,9 +1,8 @@
 <script>
-    import Material from '$lib/components/Material.svelte'
-    import Heading from '$lib/components/Heading.svelte'
-    import Materialv2 from '$lib/components/Materialv2.svelte';
-    import Menu from '$lib/components/menu.svelte';
-    import Cards from '$lib/components/cards.svelte';
+    import Material from '$lib/Material.svelte'
+    import Materialv2 from '$lib/Materialv2.svelte';
+    import Menu from '$lib/menu.svelte';
+    import Cards from '$lib/cards.svelte';
 </script>
 
 <div class="page">

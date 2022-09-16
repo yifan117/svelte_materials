@@ -92,7 +92,6 @@
     width: 30%;
     padding: 8px;
     border-radius: 8px;
-    background-image: url('$lib/images/materialicons.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

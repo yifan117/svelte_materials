@@ -589,8 +589,8 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    file2 = "_app/immutable/components/error.svelte-2e38fb53.js";
-    imports2 = ["_app/immutable/components/error.svelte-2e38fb53.js", "_app/immutable/chunks/index-2b05990c.js", "_app/immutable/chunks/singletons-438873d4.js"];
+    file2 = "_app/immutable/components/error.svelte-7f80119f.js";
+    imports2 = ["_app/immutable/components/error.svelte-7f80119f.js", "_app/immutable/chunks/index-2b05990c.js", "_app/immutable/chunks/singletons-a42eb434.js"];
     stylesheets2 = [];
   }
 });
@@ -605,30 +605,33 @@ var init_page_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/_page.svelte.js"() {
     init_chunks();
     css2 = {
-      code: "body.svelte-3av19o.svelte-3av19o{padding:50px;background-color:#131416}.cards-container.svelte-3av19o.svelte-3av19o{display:flex;flex-direction:column;margin:auto;max-width:1200px;gap:10px}.card.svelte-3av19o.svelte-3av19o{position:relative;padding:10%;background-size:contain}.card-background.svelte-3av19o.svelte-3av19o{background-size:contain;background-repeat:no-repeat;background-position:center;border-radius:24px;filter:brightness(0.75) saturate(1.2) contrast(0.85);position:absolute;left:0;right:0;bottom:0;top:0;transform-origin:center;transition:.2s}.card.svelte-3av19o:hover .card-background.svelte-3av19o{transform:scale(1.05) translateZ(0)}.cards-container.svelte-3av19o:hover>.card:not(:hover) .card-background.svelte-3av19o{filter:brightness(0.5) saturate(0) contrast(1.2) blur(20px)}.card-content.svelte-3av19o.svelte-3av19o{padding:24px;position:absolute;font-family:Arial, Helvetica, sans-serif}.card-content.svelte-3av19o p.svelte-3av19o{color:rgba(255, 255, 255, .9);font-size:12px;margin-bottom:10px;text-transform:uppercase}",
+      code: "body.svelte-1fvbyos.svelte-1fvbyos{padding:50px;background-color:#131416}.cards-container.svelte-1fvbyos.svelte-1fvbyos{display:flex;flex-direction:column;margin:auto;max-width:1200px;gap:10px}.card.svelte-1fvbyos.svelte-1fvbyos{position:relative;padding:10%;background-size:contain}.card-background.svelte-1fvbyos.svelte-1fvbyos{background-size:contain;background-repeat:no-repeat;background-position:center;border-radius:24px;filter:brightness(0.75) saturate(1.2) contrast(0.85);position:absolute;left:0;right:0;bottom:0;top:0;transform-origin:center;transition:.2s}.card.svelte-1fvbyos:hover .card-background.svelte-1fvbyos{transform:scale(1.05) translateZ(0)}.cards-container.svelte-1fvbyos:hover>.card:not(:hover) .card-background.svelte-1fvbyos{filter:brightness(0.5) saturate(0) contrast(1.2) blur(20px)}.card-content.svelte-1fvbyos.svelte-1fvbyos{padding:24px;position:absolute;font-family:Arial, Helvetica, sans-serif;text-align:center;align-items:center;justify-content:center;display:flex}p.svelte-1fvbyos.svelte-1fvbyos{color:rgba(255, 255, 255);font-size:2em;display:flex;text-transform:uppercase;font-weight:700;letter-spacing:0.1em;text-shadow:0 0 10px rgba(3, 3, 3, 1)}.card.svelte-1fvbyos:hover p.svelte-1fvbyos{opacity:0}",
       map: null
     };
     Materialv2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css2);
       return `<title>Svelte Materials</title>
 
-<body class="${"svelte-3av19o"}"><div class="${"cards-container svelte-3av19o"}"><a href="${"https://kit.svelte.dev/"}" target="${"_blank"}" class="${"card svelte-3av19o"}"><div class="${"card-background svelte-3av19o"}" style="${"background-image: url(https://miro.medium.com/max/875/1*jk1lk3q-vFzT45_ucP75Yg.png); background-color: #ffffff"}"></div>
-            <div class="${"card-content svelte-3av19o"}"><p class="${"svelte-3av19o"}"></p></div></a>
+<body class="${"svelte-1fvbyos"}"><div class="${"cards-container svelte-1fvbyos"}"><a href="${"https://kit.svelte.dev/"}" target="${"_blank"}" class="${"card svelte-1fvbyos"}"><div class="${"card-background svelte-1fvbyos"}" style="${"background-image: url(https://miro.medium.com/max/875/1*jk1lk3q-vFzT45_ucP75Yg.png); background-color: #ffffff"}"></div>
+            <div class="${"card-content svelte-1fvbyos"}"><p class="${"svelte-1fvbyos"}">Introduction To SvelteKit</p></div></a>
 
-        <a href="${"https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"}" target="${"_blank"}" class="${"card svelte-3av19o"}"><div class="${"card-background svelte-3av19o"}" style="${"background-image: url(https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png); background-color: #314085"}"></div>
-            <div class="${"card-content svelte-3av19o"}"><p class="${"svelte-3av19o"}"></p></div></a>
+        <a href="${"https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"}" target="${"_blank"}" class="${"card svelte-1fvbyos"}"><div class="${"card-background svelte-1fvbyos"}" style="${"background-image: url(https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png); background-color: #314085"}"></div>
+            <div class="${"card-content svelte-1fvbyos"}"><p class="${"svelte-1fvbyos"}">The Box Model</p></div></a>
 
-        <a href="${"https://css-tricks.com/snippets/css/a-guide-to-flexbox/"}" target="${"_blank"}" class="${"card svelte-3av19o"}"><div class="${"card-background svelte-3av19o"}" style="${"background-image: url(https://miro.medium.com/max/1200/1*HGXoBi1rjUFrv7LBtynokQ.jpeg); background-color: #430960"}"></div>
-            <div class="${"card-content svelte-3av19o"}"><p class="${"svelte-3av19o"}"></p></div></a>
+        <a href="${"https://css-tricks.com/snippets/css/a-guide-to-flexbox/"}" target="${"_blank"}" class="${"card svelte-1fvbyos"}"><div class="${"card-background svelte-1fvbyos"}" style="${"background-image: url(https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/04/flexbox-cssgrid-practical-example.png?fit=666%2C370&quality=100&strip=all&ssl=1); background-color: #7fd2c9"}"></div>
+            <div class="${"card-content svelte-1fvbyos"}"><p class="${"svelte-1fvbyos"}">CSS Flexbox Guide</p></div></a>
 
-        <a href="${"https://css-tricks.com/snippets/css/complete-guide-grid/"}" target="${"_blank"}" class="${"card svelte-3av19o"}"><div class="${"card-background svelte-3av19o"}" style="${"background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/2147485209/images/WgUgHhj8Tl64ZsgQfa4G_file.jpg); background-color: #282627"}"></div>
-            <div class="${"card-content svelte-3av19o"}"><p class="${"svelte-3av19o"}"></p></div></a>
+        <a href="${"https://css-tricks.com/snippets/css/complete-guide-grid/"}" target="${"_blank"}" class="${"card svelte-1fvbyos"}"><div class="${"card-background svelte-1fvbyos"}" style="${"background-image: url(https://miro.medium.com/max/1400/0*qe5keHwkCPQD8v2U.png); background-color: #282627"}"></div>
+            <div class="${"card-content svelte-1fvbyos"}"><p class="${"svelte-1fvbyos"}">CSS Grid Guide</p></div></a>
 
-        <a href="${"https://materialdesignicons.com/"}" target="${"_blank"}" class="${"card svelte-3av19o"}"><div class="${"card-background svelte-3av19o"}" style="${"background-image: '$lib/images/materialicons.png'; background-color: #2196f3"}"></div>
-            <div class="${"card-content svelte-3av19o"}"><p class="${"svelte-3av19o"}"></p></div></a>
+        <a href="${"https://materialdesignicons.com/"}" target="${"_blank"}" class="${"card svelte-1fvbyos"}"><div class="${"card-background svelte-1fvbyos"}" style="${"background-image: url('https://lh3.googleusercontent.com/64GWPJbpSJKB2hejLK02GLHjflv2B8cCr7SJUQI7cHXO0Qakc28U-ZRw7IRL3WadD8Stugb1HB4GgpqEkRydsEaR9AC4SqrTeRlCDlo=w1064-v0'); background-color: #2196f3; background-size: cover"}"></div>
+            <div class="${"card-content svelte-1fvbyos"}"><p class="${"svelte-1fvbyos"}">Svelte Material Icons</p></div></a>
 
-        <a href="${"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"}" target="${"_blank"}" class="${"card svelte-3av19o"}"><div class="${"card-background svelte-3av19o"}" style="${"background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60108d33abf33c3e87e59141_6002086f72b72735a101d204_color-theory.jpeg'); background-color: #ffffff; background-size: cover"}"></div>
-            <div class="${"card-content svelte-3av19o"}"><p class="${"svelte-3av19o"}">Colour Theory</p></div></a></div>
+        <a href="${"https://webflow.com/blog/color-theory"}" target="${"_blank"}" class="${"card svelte-1fvbyos"}"><div class="${"card-background svelte-1fvbyos"}" style="${"background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60108d33abf33c3e87e59141_6002086f72b72735a101d204_color-theory.jpeg'); background-color: #ffffff; background-size: cover"}"></div>
+            <div class="${"card-content svelte-1fvbyos"}"><p class="${"svelte-1fvbyos"}">Colour Theory</p></div></a>
+
+        <a href="${"https://material.io/design"}" target="${"_blank"}" class="${"card svelte-1fvbyos"}"><div class="${"card-background svelte-1fvbyos"}" style="${"background-image: url('https://material.io/static/assets/result.png'); background-color: #212121; background-size: contain"}"></div>
+            <div class="${"card-content svelte-1fvbyos"}"><p class="${"svelte-1fvbyos"}">Material Design</p></div></a></div>
 </body>`;
     });
     Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -656,9 +659,9 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
-    file3 = "_app/immutable/components/pages/_page.svelte-01a0e6e5.js";
-    imports3 = ["_app/immutable/components/pages/_page.svelte-01a0e6e5.js", "_app/immutable/chunks/index-2b05990c.js"];
-    stylesheets3 = ["_app/immutable/assets/_page-6af87653.css"];
+    file3 = "_app/immutable/components/pages/_page.svelte-149493d7.js";
+    imports3 = ["_app/immutable/components/pages/_page.svelte-149493d7.js", "_app/immutable/chunks/index-2b05990c.js"];
+    stylesheets3 = ["_app/immutable/assets/_page-8913604a.css"];
   }
 });
 
@@ -2983,7 +2986,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "_app/immutable/start-ec9f9826.js", "imports": ["_app/immutable/start-ec9f9826.js", "_app/immutable/chunks/index-2b05990c.js", "_app/immutable/chunks/singletons-438873d4.js"], "stylesheets": [] },
+    entry: { "file": "_app/immutable/start-b8ffdc5d.js", "imports": ["_app/immutable/start-b8ffdc5d.js", "_app/immutable/chunks/index-2b05990c.js", "_app/immutable/chunks/singletons-a42eb434.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
