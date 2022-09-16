@@ -1,61 +1,29 @@
-<script>
+<script lang='ts'>
+	import { each } from "svelte/internal";
 
+let resources = [
+    {link: 'https://kit.svelte.dev/', styling: 'background-image: url(https://miro.medium.com/max/1000/1*joB4ddC9_-3okvy0r8_CPQ.png); background-color: #ff3c00', name: 'Introduction to SvelteKit'},
+    {link: 'https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model', styling: 'background-image: url(https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png); background-color: #314085', name: 'The Box Model'},
+    {link: 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/', styling: 'background-image: url(https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/04/flexbox-cssgrid-practical-example.png?fit=666%2C370&quality=100&strip=all&ssl=1); background-color: #7fd2c9', name: 'CSS Flexbox Guide'},
+    {link: 'https://css-tricks.com/snippets/css/complete-guide-grid/', styling: 'background-image: url(https://miro.medium.com/max/1400/0*qe5keHwkCPQD8v2U.png); background-color: #282627', name: 'CSS Grid Guide'},
+    {link: 'https://materialdesignicons.com/', styling: 'background-image: url(https://lh3.googleusercontent.com/64GWPJbpSJKB2hejLK02GLHjflv2B8cCr7SJUQI7cHXO0Qakc28U-ZRw7IRL3WadD8Stugb1HB4GgpqEkRydsEaR9AC4SqrTeRlCDlo=w1064-v0); background-color: #2196f3; background-size: cover', name: 'Svelte Material Icons'},
+    {link: 'https://webflow.com/blog/color-theory', styling: 'background-image: url(https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60108d33abf33c3e87e59141_6002086f72b72735a101d204_color-theory.jpeg); background-color: #ffffff; background-size: cover', name: 'Colour Theory'},
+    {link: 'https://material.io/design', styling: 'background-image: url(https://material.io/static/assets/result.png); background-color: #212121; background-size: contain', name: 'Material Design'}
+];
 </script>
 
 <title>Svelte Materials</title>
 
 <body>
     <div class="cards-container">
-
-        <a href="https://kit.svelte.dev/" target="_blank" class="card">
-            <div class="card-background" style="background-image: url(https://miro.medium.com/max/1000/1*joB4ddC9_-3okvy0r8_CPQ.png); background-color: #ff3c00"></div>
+        {#each resources as resource}
+        <a href="{resource.link}" target="_blank" class="card">
+            <div class="card-background" style="{resource.styling}"></div>
             <div class="card-content">
-                <p>Introduction To SvelteKit</p>
+                <p>{resource.name}</p>
             </div>
         </a>
-
-        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank" class="card">
-            <div class="card-background" style="background-image: url(https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png); background-color: #314085"></div>
-            <div class="card-content">
-                <p>The Box Model</p>
-            </div>
-        </a>
-
-        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="card">
-            <div class="card-background" style="background-image: url(https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/04/flexbox-cssgrid-practical-example.png?fit=666%2C370&quality=100&strip=all&ssl=1); background-color: #7fd2c9"></div>
-            <div class="card-content">
-                <p>CSS Flexbox Guide</p>
-            </div>
-        </a>
-
-        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="card">
-            <div class="card-background" style="background-image: url(https://miro.medium.com/max/1400/0*qe5keHwkCPQD8v2U.png); background-color: #282627"></div>
-            <div class="card-content">
-                <p>CSS Grid Guide</p>
-            </div>
-        </a>
-
-        <a href="https://materialdesignicons.com/" target="_blank" class="card">
-            <div class="card-background" style="background-image: url('https://lh3.googleusercontent.com/64GWPJbpSJKB2hejLK02GLHjflv2B8cCr7SJUQI7cHXO0Qakc28U-ZRw7IRL3WadD8Stugb1HB4GgpqEkRydsEaR9AC4SqrTeRlCDlo=w1064-v0'); background-color: #2196f3; background-size: cover"></div>
-            <div class="card-content">
-                <p>Svelte Material Icons</p>
-            </div>
-        </a>
-
-        <a href="https://webflow.com/blog/color-theory" target="_blank" class="card">
-            <div class="card-background" style="background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60108d33abf33c3e87e59141_6002086f72b72735a101d204_color-theory.jpeg'); background-color: #ffffff; background-size: cover"></div>
-            <div class="card-content">
-                <p>Colour Theory</p>
-            </div>
-        </a>
-
-        <a href="https://material.io/design" target="_blank" class="card">
-            <div class="card-background" style="background-image: url('https://material.io/static/assets/result.png'); background-color: #212121; background-size: contain"></div>
-            <div class="card-content">
-                <p>Material Design</p>
-            </div>
-        </a>
-
+        {/each}
     </div>
 </body>
 
