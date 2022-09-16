@@ -125,10 +125,16 @@
         text-shadow: 0 0 10px rgba(3, 3, 3, 1);
         position: absolute;
         text-align: center;
+        border: 5px solid #fff;
+        
+    }
+
+    .cards-container:hover>.card:not(:hover) p {
+        opacity: 0;
     }
 
     .card:hover p {
-        opacity: 0;
+        opacity: 100;
     }
 
 </style>
