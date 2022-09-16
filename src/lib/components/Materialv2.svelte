@@ -10,42 +10,49 @@
         <a href="https://kit.svelte.dev/" target="_blank" class="card">
             <div class="card-background" style="background-image: url(https://miro.medium.com/max/875/1*jk1lk3q-vFzT45_ucP75Yg.png); background-color: #ffffff"></div>
             <div class="card-content">
-                <p></p>
+                <p>Introduction To SvelteKit</p>
             </div>
         </a>
 
         <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank" class="card">
             <div class="card-background" style="background-image: url(https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png); background-color: #314085"></div>
             <div class="card-content">
-                <p></p>
+                <p>The Box Model</p>
             </div>
         </a>
 
         <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="card">
-            <div class="card-background" style="background-image: url(https://miro.medium.com/max/1200/1*HGXoBi1rjUFrv7LBtynokQ.jpeg); background-color: #430960"></div>
+            <div class="card-background" style="background-image: url(https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/04/flexbox-cssgrid-practical-example.png?fit=666%2C370&quality=100&strip=all&ssl=1); background-color: #7fd2c9"></div>
             <div class="card-content">
-                <p></p>
+                <p>CSS Flexbox Guide</p>
             </div>
         </a>
 
         <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="card">
-            <div class="card-background" style="background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/2147485209/images/WgUgHhj8Tl64ZsgQfa4G_file.jpg); background-color: #282627"></div>
+            <div class="card-background" style="background-image: url(https://miro.medium.com/max/1400/0*qe5keHwkCPQD8v2U.png); background-color: #282627"></div>
             <div class="card-content">
-                <p></p>
+                <p>CSS Grid Guide</p>
             </div>
         </a>
 
         <a href="https://materialdesignicons.com/" target="_blank" class="card">
-            <div class="card-background" style="background-image: '$lib/images/materialicons.png'; background-color: #2196f3"></div>
+            <div class="card-background" style="background-image: url('https://lh3.googleusercontent.com/64GWPJbpSJKB2hejLK02GLHjflv2B8cCr7SJUQI7cHXO0Qakc28U-ZRw7IRL3WadD8Stugb1HB4GgpqEkRydsEaR9AC4SqrTeRlCDlo=w1064-v0'); background-color: #2196f3; background-size: cover"></div>
             <div class="card-content">
-                <p></p>
+                <p>Svelte Material Icons</p>
             </div>
         </a>
 
-        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" class="card">
+        <a href="https://webflow.com/blog/color-theory" target="_blank" class="card">
             <div class="card-background" style="background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60108d33abf33c3e87e59141_6002086f72b72735a101d204_color-theory.jpeg'); background-color: #ffffff; background-size: cover"></div>
             <div class="card-content">
                 <p>Colour Theory</p>
+            </div>
+        </a>
+
+        <a href="https://material.io/design" target="_blank" class="card">
+            <div class="card-background" style="background-image: url('https://material.io/static/assets/result.png'); background-color: #212121; background-size: contain"></div>
+            <div class="card-content">
+                <p>Material Design</p>
             </div>
         </a>
 
@@ -100,13 +107,25 @@
         padding: 24px;
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
     }
 
-    .card-content p {
-        color: rgba(255, 255, 255, .9);
-        font-size: 12px;
-        margin-bottom: 10px;
+    p {
+        color: rgba(255, 255, 255);
+        font-size: 2em;
+        display: flex;
         text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-shadow: 0 0 10px rgba(3, 3, 3, 1);
+    }
+
+    .card:hover p {
+        opacity: 0;
     }
 
 </style>
