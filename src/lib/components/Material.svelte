@@ -1,7 +1,5 @@
 <script>
-
-    import Sveltekitimg from '$lib/images/Sveltekitimg.png'
-
+    
 </script>
 
 <div class="tileWrapper">
