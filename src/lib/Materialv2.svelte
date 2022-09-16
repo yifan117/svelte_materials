@@ -8,7 +8,7 @@
     <div class="cards-container">
 
         <a href="https://kit.svelte.dev/" target="_blank" class="card">
-            <div class="card-background" style="background-image: url(https://miro.medium.com/max/875/1*jk1lk3q-vFzT45_ucP75Yg.png); background-color: #ffffff"></div>
+            <div class="card-background" style="background-image: url(https://miro.medium.com/max/1000/1*joB4ddC9_-3okvy0r8_CPQ.png); background-color: #ff3c00"></div>
             <div class="card-content">
                 <p>Introduction To SvelteKit</p>
             </div>
@@ -105,23 +105,24 @@
 
     .card-content {
         padding: 24px;
-        position: absolute;
+        position: relative;
+        display: flex;
         font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+        max-height: 100%;
+        max-width: 100%;
         align-items: center;
         justify-content: center;
-        display: flex;
-
     }
 
     p {
-        color: rgba(255, 255, 255);
+        color: #fff;
         font-size: 2em;
         display: flex;
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 0.1em;
         text-shadow: 0 0 10px rgba(3, 3, 3, 1);
+        position: absolute;
     }
 
     .card:hover p {
