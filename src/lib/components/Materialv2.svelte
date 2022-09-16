@@ -48,13 +48,10 @@
     align-items: center;
     border-radius: 8px;
     flex-wrap: wrap;
+    box-shadow: 32px 32px 100px #000;
 
-.sveltekit,
-.flexbox,
-.material,
-.box,
-.tile,
-.grid
+
+.tile
     display: flex;
     background-color: #ffffff;
     min-height: 250px;
@@ -69,27 +66,42 @@
 .flexbox:hover,
 .material:hover,
 .box:hover,
-.tile:hover,
-.grid:hover
+.grid:hover,
+.tile:hover
     opacity: 30%;
     cursor: pointer;
+    transform: scale(1.05) translateZ(0);
+
+.tileWrapper:hover>
+.sveltekit:not(:hover),
+.flexbox:not(:hover),
+.material:not(:hover),
+.box:not(:hover),
+.grid:not(:hover),
+.tile:not(:hover)
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 
 .sveltekit
+    @extends .tile
     background-image: url('https://miro.medium.com/max/875/1*jk1lk3q-vFzT45_ucP75Yg.png');
 
 .flexbox
+    @extends .tile
     background-color: #430960;
     background-image: url('https://miro.medium.com/max/1200/1*HGXoBi1rjUFrv7LBtynokQ.jpeg');
 
 .material 
+    @extends .tile
     background-color: #2196f3;
     background-image: url('$lib/images/materialicons.png');
 
 .box
+    @extends .tile
     background-color: #314085;
     background-image: url('https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png');
 
 .grid
+    @extends .tile
     background-color: #282627;
     background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/2147485209/images/WgUgHhj8Tl64ZsgQfa4G_file.jpg');
 
@@ -102,4 +114,6 @@ a
     justify-content: center;
     align-items: center;
     width: 100%;
+
+
 </style>
