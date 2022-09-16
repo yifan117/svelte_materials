@@ -7,11 +7,11 @@
 </script>
 
 <div class="page">
-    <!-- <Heading/>
-    <Materialv2/> -->
+    <Materialv2/>
+    <!-- <Heading/> -->
     <!-- <Material/> -->
-    <!-- <Menu>/> -->
-    <Cards/>
+    <!-- <Menu/> -->
+    <!-- <Cards/> -->
 </div>
 
 <style>
