@@ -112,17 +112,19 @@
         max-width: 100%;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     p {
         color: #fff;
-        font-size: 2em;
+        font-size: 2vw;
         display: flex;
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 0.1em;
         text-shadow: 0 0 10px rgba(3, 3, 3, 1);
         position: absolute;
+        text-align: center;
     }
 
     .card:hover p {
